@@ -1,0 +1,141 @@
+/* ********** Variables ********** */
+:root {
+  /* Colors */
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --transparent-green-color: #33d1ccc2;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto-Medium;
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+body {
+  font-family: Roboto-Regular;
+}
+/* ********** Variables ********** */
+
+/* ********** Main Rules ********** */
+.bg-darkblue {
+  background: var(--dark-color);
+}
+.bg-red {
+  background: var(--red-color);
+}
+.bg-section {
+  background: var(--section-color);
+}
+.bg-white {
+  background: white;
+}
+.bg-green {
+  background: var(--green-color);
+}
+.bg-yellow {
+  background: var(--yellow-color);
+}
+.yellow {
+  color: var(--yellow-color);
+}
+.green {
+  color: var(--green-color);
+}
+.section {
+  color: var(--section-color);
+}
+.btn-special {
+  background: var(--red-color);
+  color: var(--yellow-color);
+}
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 2px;
+  background: var(--green-color);
+  transform: translateX(-50%);
+}
+/* ********** Main Rules ********** */
+
+/* ********** Header ********** */
+/* ********** Header ********** */
+
+/* ********** Landing ********** */
+.landing {
+  height: calc(100vh - 70px);
+}
+/* ********** Landing ********** */
+
+/* ********** Features ********** */
+.features .icon-holder {
+  height: 200px;
+}
+.features .number {
+  font-size: 12rem;
+}
+/* ********** Features ********** */
+
+/* ********** Work ********** */
+.work .box {
+  position: relative;
+  padding: 5px;
+  background: white;
+  overflow: hidden;
+}
+.work .box::before {
+  content: attr(data-work);
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background: var(--transparent-green-color);
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  transform: translateX(calc(-100% - 5px));
+}
+.work .box:hover::before {
+  transform: translatex(0);
+}
+/* ********** Work ********** */
+
+/* ********** Subscribe ********** */
+.subscribe input {
+  outline: navajowhite;
+}
+.subscribe input::placeholder {
+  color: white;
+}
+/* ********** Subscribe ********** */
+
+/* ********** Footer ********** */
+footer .social svg {
+  /* width: 20px;
+  height: 20px; */
+}
+.facebook {
+  background: #1877f2;
+}
+.twitter {
+  background: #1da1f2;
+}
+.linkedin {
+  background: #0a66c2;
+}
+.youtube {
+  background: #ff0000;
+}
+/* ********** Footer ********** */
